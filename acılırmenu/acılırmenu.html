@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .upper {
+
+            width: 100%;
+            height: 70px;
+            background-color: white;
+
+        }
+
+        ul {
+
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            display: inline-block;
+
+        }
+
+        li {
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        ul:hover li a {
+            position: relative;
+        }
+
+
+
+        li a {
+            display: block;
+            background-color: none;
+            min-width: 140px;
+            color: black;
+            text-decoration: none;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+            background-color: #DBDBDB;
+            transition: 1s;
+
+        }
+
+        li:hover ul a {
+            background-color: #f3f3f3;
+            color: black;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        li:hover ul a:hover {
+            background-color: #1B1C1D;
+            color: #fff;
+
+        }
+
+        li ul li {
+            display: block;
+            float: none;
+        }
+
+        li ul li a {
+            text-align: left;
+            min-width: 100px;
+            padding: 0 20px;
+            font-size: 15px;
+        }
+
+        li ul {
+            display: none;
+        }
+
+        ul li a:hover+#hidden,
+        #hidden:hover {
+
+            display: block;
+
+        }
+
+        #hidden {
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="upper">
+
+        <a class="title" href=""></a>
+        <div id="dropbutton"></div>
+        <ul id="firsthidden">
+            <li>
+                <a href="">Eğitimler</a>
+                <ul id="hidden" >
+                    <li> <a href="">ileri seviye c#</a> </li>
+                    <li><a href="">ileri seviye python</a> </li>
+                    <li><a href=""> ileri seviye javascript</a></li>
+                </ul>
+            </li>
+
+            <li id="listdrop">
+                <a href="#">Bize Ulaşın</a>
+                <ul id="hidden">
+                    <li>
+                        <a href="https://www.instagram.com/polattucar/?hl=tr"><i class="fab fa-instagram"></i>
+                            İnstagram</a>
+                    </li>
+                    <li>
+                        <a href="mailto:m.polat.ucar@gmail.com"><i class="fas fa-envelope"></i> E-posta</a>
+                    </li>
+
+
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="">Hakkımızda</a>
+            </li>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
